@@ -1,6 +1,6 @@
 
-import { useState, useEffect, Component, ErrorInfo } from 'react';
-import { Link, useNavigate, useParams } from 'react-router-dom';
+import { useState, useEffect, Component } from 'react';
+import { Link, useParams } from 'react-router-dom';
 import {
     LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer
 } from 'recharts';
@@ -139,7 +139,7 @@ const analyzeCandles = (candles: Candle[]) => {
 };
 
 // --- Mock Data ---
-function generateMockCandles(symbol: string, count: number = 101): Candle[] {
+function generateMockCandles(count: number = 101): Candle[] {
     const candles: Candle[] = [];
     const now = new Date();
     let price = 150;
@@ -165,7 +165,7 @@ async function fetchLocalCandles(symbol: string, range: string): Promise<Candle[
         if (response.ok) return await response.json();
     } catch (e) { }
     // Return adequate mock data if fetch fails
-    return generateMockCandles(symbol, range === '1mo' ? 30 : range === '3mo' ? 90 : 250);
+    return generateMockCandles(range === '1mo' ? 30 : range === '3mo' ? 90 : 250);
 }
 async function fetchLocalQuote(symbol: string): Promise<Quote | null> {
     try {

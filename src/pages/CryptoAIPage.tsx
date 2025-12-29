@@ -179,34 +179,12 @@ function DashboardTab({ state, positions }: { state: CryptoAIState; positions: C
                             <span className="scan-value">{state.scanSummary.totalScanned}</span>
                             <span className="scan-label">Taranan</span>
                         </div>
-                        <div className="scan-reasons">
-                            <div className="reason-item">
-                                <span className="reason-count">{state.scanSummary.rejectedStable}</span>
-                                <span className="reason-text">Stablecoin</span>
-                            </div>
-                            <div className="reason-item">
-                                <span className="reason-count">{state.scanSummary.rejectedFalling}</span>
-                                <span className="reason-text">Düşen Bıçak</span>
-                            </div>
-                            <div className="reason-item">
-                                <span className="reason-count">{state.scanSummary.rejectedFOMO}</span>
-                                <span className="reason-text">FOMO</span>
-                            </div>
-                            <div className="reason-item">
-                                <span className="reason-count">{state.scanSummary.rejectedTrend}</span>
-                                <span className="reason-text">Ters Trend</span>
-                            </div>
-                            <div className="reason-item warning">
-                                <span className="reason-count">{state.scanSummary.rejectedScore}</span>
-                                <span className="reason-text">Yetersiz Skor</span>
-                            </div>
-                            <div className="reason-item success">
-                                <span className="reason-count">{state.scanSummary.qualified}</span>
-                                <span className="reason-text">Uygun Aday</span>
-                            </div>
+                        <div className="reason-item success">
+                            <span className="reason-count">{state.scanSummary.qualified}</span>
+                            <span className="reason-text">Uygun Aday</span>
                         </div>
                         <div className="scan-time">
-                            Son: {new Date(state.scanSummary.lastUpdate).toLocaleTimeString()}
+                            Son: {state.lastAnalysis ? new Date(state.lastAnalysis).toLocaleTimeString() : '-'}
                         </div>
                     </div>
                 </div>
@@ -324,7 +302,6 @@ function PositionsTab({ positions }: { positions: CryptoPosition[] }) {
                         <tr key={pos.symbol}>
                             <td className="coin-cell">
                                 <span className="coin-symbol">{pos.symbol.replace('-USD', '')}</span>
-                                <span className="coin-name">{pos.name}</span>
                             </td>
                             <td>{pos.shares.toFixed(4)}</td>
                             <td>${pos.avgCost.toFixed(2)}</td>
@@ -377,24 +354,13 @@ function TradesTab({ trades }: { trades: CryptoTrade[] }) {
                             <span>Değer</span>
                             <span>${trade.usdValue.toFixed(2)}</span>
                         </div>
-                        {trade.pnl !== undefined && (
-                            <div className={`trade-detail ${trade.pnl >= 0 ? 'positive' : 'negative'}`}>
-                                <span>K/Z</span>
-                                <span>${trade.pnl.toFixed(2)}</span>
-                            </div>
-                        )}
+
                     </div>
                     <div className="trade-reason">
                         <span className="reason-label">Sebep:</span>
                         <span>{trade.reason}</span>
                     </div>
-                    {trade.signals && (
-                        <div className="trade-signals">
-                            <span>RSI: {trade.signals.rsi?.toFixed(0) || '-'}</span>
-                            <span>24h: {trade.signals.priceChange24h?.toFixed(1) || '-'}%</span>
-                            <span>Hacim: {trade.signals.volumeChange?.toFixed(1) || '-'}x</span>
-                        </div>
-                    )}
+
                 </div>
             ))}
         </div>
@@ -448,33 +414,10 @@ function MarketTab({ state }: { state: CryptoAIState }) {
                             <span className="scan-label">Taranan</span>
                         </div>
                         <div className="scan-reasons">
-                            <div className="reason-item">
-                                <span className="reason-count">{state.scanSummary.rejectedStable}</span>
-                                <span className="reason-text">Stablecoin</span>
-                            </div>
-                            <div className="reason-item">
-                                <span className="reason-count">{state.scanSummary.rejectedFalling}</span>
-                                <span className="reason-text">Düşen Bıçak (-5%)</span>
-                            </div>
-                            <div className="reason-item">
-                                <span className="reason-count">{state.scanSummary.rejectedFOMO}</span>
-                                <span className="reason-text">FOMO (+20%)</span>
-                            </div>
-                            <div className="reason-item">
-                                <span className="reason-count">{state.scanSummary.rejectedTrend}</span>
-                                <span className="reason-text">Ters Trend</span>
-                            </div>
-                            <div className="reason-item warning">
-                                <span className="reason-count">{state.scanSummary.rejectedScore}</span>
-                                <span className="reason-text">Yetersiz Skor</span>
-                            </div>
                             <div className="reason-item success">
                                 <span className="reason-count">{state.scanSummary.qualified}</span>
                                 <span className="reason-text">Uygun Aday</span>
                             </div>
-                        </div>
-                        <div className="scan-time">
-                            Son Güncelleme: {new Date(state.scanSummary.lastUpdate).toLocaleTimeString()}
                         </div>
                     </div>
                 ) : (

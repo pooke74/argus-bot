@@ -1,5 +1,5 @@
 
-import { Candle } from './YahooFinanceProvider';
+import type { Candle } from './YahooFinanceProvider';
 
 export interface TechnicalPattern {
     name: string;
@@ -44,7 +44,6 @@ export const TechnicalAnalysisService = {
         const annotations: ChartAnnotation[] = [];
 
         // 1. Calculate Indicators
-        const sma20 = this.calculateSMA(closes, 20);
         const sma50 = this.calculateSMA(closes, 50);
         const sma200 = this.calculateSMA(closes, 200);
 
