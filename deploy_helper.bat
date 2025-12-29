@@ -33,6 +33,12 @@ echo Lutfen acilan pencerede sifre/token girin.
 echo ----------------------------------------------------
 echo.
 
+:: AUTO-COMMIT (Degisiklikleri kaydet)
+echo [BILGI] Son degisiklikler paketleniyor...
+git add .
+git commit -m "Argus Auto-Deploy Update" >nul 2>&1
+
+:: Push komutu - Hata varsa ekranda kalsin
 git push -u origin main
 if errorlevel 1 goto PUSH_ERROR
 

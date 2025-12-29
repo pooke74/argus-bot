@@ -311,7 +311,7 @@ app.post('/api/bot/reset', (req, res) => {
 
 
 // Handle React Routing (SPA) - Serve index.html for all other routes
-app.get('*', (req, res) => {
+app.get(/^(?!\/api).+/, (req, res) => {
     res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 

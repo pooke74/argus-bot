@@ -3,85 +3,85 @@
   "initialCapital": 1000,
   "currentCash": 121.57665459056932,
   "positions": {
-    "ETH-USD": {
-      "symbol": "ETH-USD",
-      "shares": 0.03406350732178058,
-      "avgCost": 2935.693,
-      "currentPrice": 2935.693,
+    "TRX-USD": {
+      "symbol": "TRX-USD",
+      "shares": 352.7972766872618,
+      "avgCost": 0.2834489,
+      "currentPrice": 0.2834489,
       "pnl": 0,
-      "date": "2025-12-29T17:08:21.674Z"
+      "date": "2025-12-29T20:42:33.222Z"
     },
-    "XRP-USD": {
-      "symbol": "XRP-USD",
-      "shares": 48.339716055730534,
-      "avgCost": 1.8618231,
-      "currentPrice": 1.8618231,
+    "SHIB-USD": {
+      "symbol": "SHIB-USD",
+      "shares": 12451577.199778639,
+      "avgCost": 0.000007228,
+      "currentPrice": 0.000007228,
       "pnl": 0,
-      "date": "2025-12-29T17:08:21.674Z"
-    },
-    "SOL-USD": {
-      "symbol": "SOL-USD",
-      "shares": 0.6563167407278244,
-      "avgCost": 123.41602,
-      "currentPrice": 123.41602,
-      "pnl": 0,
-      "date": "2025-12-29T17:08:21.674Z"
-    },
-    "BTC-USD": {
-      "symbol": "BTC-USD",
-      "shares": 0.0008323327833162605,
-      "avgCost": 87585.16,
-      "currentPrice": 87585.16,
-      "pnl": 0,
-      "date": "2025-12-29T17:08:51.559Z"
-    },
-    "BNB-USD": {
-      "symbol": "BNB-USD",
-      "shares": 0.07688380617518638,
-      "avgCost": 853.36566,
-      "currentPrice": 853.36566,
-      "pnl": 0,
-      "date": "2025-12-29T17:08:51.559Z"
-    },
-    "LTC-USD": {
-      "symbol": "LTC-USD",
-      "shares": 0.7565377887095746,
-      "avgCost": 78.05162,
-      "currentPrice": 78.05162,
-      "pnl": 0,
-      "date": "2025-12-29T17:08:51.560Z"
-    },
-    "BCH-USD": {
-      "symbol": "BCH-USD",
-      "shares": 0.08795513144835237,
-      "avgCost": 604.2183,
-      "currentPrice": 604.2183,
-      "pnl": 0,
-      "date": "2025-12-29T17:08:51.560Z"
+      "date": "2025-12-29T20:42:33.222Z"
     },
     "XLM-USD": {
       "symbol": "XLM-USD",
-      "shares": 219.4781488882784,
-      "avgCost": 0.21792461,
-      "currentPrice": 0.21792461,
+      "shares": 375.2589286607759,
+      "avgCost": 0.21585096,
+      "currentPrice": 0.21585096,
       "pnl": 0,
-      "date": "2025-12-29T17:08:51.560Z"
+      "date": "2025-12-29T20:42:33.222Z"
+    },
+    "NEAR-USD": {
+      "symbol": "NEAR-USD",
+      "shares": 48.22461318105029,
+      "avgCost": 1.5116762,
+      "currentPrice": 1.5116762,
+      "pnl": 0,
+      "date": "2025-12-29T20:42:33.222Z"
     },
     "ETC-USD": {
       "symbol": "ETC-USD",
-      "shares": 3.590111703930084,
-      "avgCost": 11.990357,
-      "currentPrice": 11.990357,
+      "shares": 5.526197427003825,
+      "avgCost": 11.87254,
+      "currentPrice": 11.87254,
       "pnl": 0,
-      "date": "2025-12-29T17:08:51.560Z"
+      "date": "2025-12-29T20:42:33.222Z"
     },
-    "DOGE-USD": {
-      "symbol": "DOGE-USD",
-      "shares": 313.3856388959444,
-      "avgCost": 0.1236242,
-      "currentPrice": 0.1236242,
+    "BTC-USD": {
+      "symbol": "BTC-USD",
+      "shares": 0.0006773008718919622,
+      "avgCost": 87182.82,
+      "currentPrice": 87182.82,
       "pnl": 0,
-      "date": "2025-12-29T17:09:21.634Z"
+      "date": "2025-12-29T20:43:04.649Z"
+    },
+    "ETH-USD": {
+      "symbol": "ETH-USD",
+      "shares": 0.018146700348496306,
+      "avgCost": 2928.582,
+      "currentPrice": 2928.582,
+      "pnl": 0,
+      "date": "2025-12-29T20:43:04.649Z"
+    },
+    "BNB-USD": {
+      "symbol": "BNB-USD",
+      "shares": 0.05615953308969199,
+      "avgCost": 851.67535,
+      "currentPrice": 851.67535,
+      "pnl": 0,
+      "date": "2025-12-29T20:43:04.649Z"
+    },
+    "SOL-USD": {
+      "symbol": "SOL-USD",
+      "shares": 0.35033472740010185,
+      "avgCost": 122.87312,
+      "currentPrice": 122.87312,
+      "pnl": 0,
+      "date": "2025-12-29T20:43:04.649Z"
+    },
+    "LINK-USD": {
+      "symbol": "LINK-USD",
+      "shares": 3.15739918229805,
+      "avgCost": 12.270241,
+      "currentPrice": 12.270241,
+      "pnl": 0,
+      "date": "2025-12-29T20:43:04.649Z"
     },
     "MATIC-USD": {
       "symbol": "MATIC-USD",
@@ -89,270 +89,270 @@
       "avgCost": 0.21823609,
       "currentPrice": 0.21823609,
       "pnl": 0,
-      "date": "2025-12-29T17:09:21.634Z"
-    },
-    "SHIB-USD": {
-      "symbol": "SHIB-USD",
-      "shares": 4294069.459359607,
-      "avgCost": 0.000007308,
-      "currentPrice": 0.000007308,
-      "pnl": 0,
-      "date": "2025-12-29T17:09:21.634Z"
-    },
-    "NEAR-USD": {
-      "symbol": "NEAR-USD",
-      "shares": 18.48713524085256,
-      "avgCost": 1.5277085,
-      "currentPrice": 1.5277085,
-      "pnl": 0,
-      "date": "2025-12-29T17:09:21.634Z"
-    },
-    "AVAX-USD": {
-      "symbol": "AVAX-USD",
-      "shares": 2.015223452928333,
-      "avgCost": 12.61332,
-      "currentPrice": 12.61332,
-      "pnl": 0,
-      "date": "2025-12-29T17:10:21.588Z"
-    },
-    "TRX-USD": {
-      "symbol": "TRX-USD",
-      "shares": 81.01472583563816,
-      "avgCost": 0.2823782,
-      "currentPrice": 0.2823782,
-      "pnl": 0,
-      "date": "2025-12-29T17:10:51.518Z"
-    },
-    "DOT-USD": {
-      "symbol": "DOT-USD",
-      "shares": 11.110063004413947,
-      "avgCost": 1.853195,
-      "currentPrice": 1.853195,
-      "pnl": 0,
-      "date": "2025-12-29T17:11:21.707Z"
+      "date": "2025-12-29T20:43:04.650Z"
     },
     "ATOM-USD": {
       "symbol": "ATOM-USD",
-      "shares": 9.266906601010414,
-      "avgCost": 1.9996103,
-      "currentPrice": 1.9996103,
+      "shares": 15.980762830571138,
+      "avgCost": 1.9636772,
+      "currentPrice": 1.9636772,
       "pnl": 0,
-      "date": "2025-12-29T17:11:21.708Z"
+      "date": "2025-12-29T20:43:04.650Z"
     },
-    "LINK-USD": {
-      "symbol": "LINK-USD",
-      "shares": 1.3426629586106995,
-      "avgCost": 12.420974,
-      "currentPrice": 12.420974,
+    "XRP-USD": {
+      "symbol": "XRP-USD",
+      "shares": 15.296826044531532,
+      "avgCost": 1.8463277,
+      "currentPrice": 1.8463277,
       "pnl": 0,
-      "date": "2025-12-29T17:11:51.860Z"
+      "date": "2025-12-29T20:43:34.425Z"
+    },
+    "DOGE-USD": {
+      "symbol": "DOGE-USD",
+      "shares": 207.7734613778854,
+      "avgCost": 0.12233833,
+      "currentPrice": 0.12233833,
+      "pnl": 0,
+      "date": "2025-12-29T20:43:34.425Z"
+    },
+    "LTC-USD": {
+      "symbol": "LTC-USD",
+      "shares": 0.29373669483400333,
+      "avgCost": 77.88197,
+      "currentPrice": 77.88197,
+      "pnl": 0,
+      "date": "2025-12-29T20:44:35.871Z"
+    },
+    "BCH-USD": {
+      "symbol": "BCH-USD",
+      "shares": 0.03458096936775976,
+      "avgCost": 595.38855,
+      "currentPrice": 595.38855,
+      "pnl": 0,
+      "date": "2025-12-29T20:45:03.930Z"
     },
     "UNI-USD": {
       "symbol": "UNI-USD",
-      "shares": 92285.28627107336,
+      "shares": 113932.45218651032,
       "avgCost": 0.000162642,
       "currentPrice": 0.000162642,
       "pnl": 0,
-      "date": "2025-12-29T17:13:21.567Z"
+      "date": "2025-12-29T20:45:03.930Z"
+    },
+    "DOT-USD": {
+      "symbol": "DOT-USD",
+      "shares": 9.105745342026333,
+      "avgCost": 1.831501,
+      "currentPrice": 1.831501,
+      "pnl": 0,
+      "date": "2025-12-29T20:45:34.475Z"
+    },
+    "AVAX-USD": {
+      "symbol": "AVAX-USD",
+      "shares": 1.2109433440350812,
+      "avgCost": 12.394852,
+      "currentPrice": 12.394852,
+      "pnl": 0,
+      "date": "2025-12-29T20:46:04.550Z"
     },
     "ADA-USD": {
       "symbol": "ADA-USD",
-      "shares": 37.49504489734799,
-      "avgCost": 0.36027473,
-      "currentPrice": 0.36027473,
+      "shares": 38.52020652727092,
+      "avgCost": 0.35068652,
+      "currentPrice": 0.35068652,
       "pnl": 0,
-      "date": "2025-12-29T17:13:51.686Z"
+      "date": "2025-12-29T20:48:04.807Z"
     }
   },
   "trades": [
     {
-      "id": 1767028431686,
+      "id": 1767041284807,
       "symbol": "ADA-USD",
       "action": "BUY",
-      "price": 0.36027473,
-      "amount": 37.49504489734799,
-      "timestamp": "2025-12-29T17:13:51.686Z",
+      "price": 0.35068652,
+      "amount": 38.52020652727092,
+      "timestamp": "2025-12-29T20:48:04.807Z",
       "reason": "Bot Signal"
     },
     {
-      "id": 1767028401567,
+      "id": 1767041164550,
+      "symbol": "AVAX-USD",
+      "action": "BUY",
+      "price": 12.394852,
+      "amount": 1.2109433440350812,
+      "timestamp": "2025-12-29T20:46:04.550Z",
+      "reason": "Bot Signal"
+    },
+    {
+      "id": 1767041134475,
+      "symbol": "DOT-USD",
+      "action": "BUY",
+      "price": 1.831501,
+      "amount": 9.105745342026333,
+      "timestamp": "2025-12-29T20:45:34.475Z",
+      "reason": "Bot Signal"
+    },
+    {
+      "id": 1767041103930,
       "symbol": "UNI-USD",
       "action": "BUY",
       "price": 0.000162642,
-      "amount": 92285.28627107336,
-      "timestamp": "2025-12-29T17:13:21.567Z",
+      "amount": 113932.45218651032,
+      "timestamp": "2025-12-29T20:45:03.930Z",
       "reason": "Bot Signal"
     },
     {
-      "id": 1767028311860,
-      "symbol": "LINK-USD",
+      "id": 1767041103930,
+      "symbol": "BCH-USD",
       "action": "BUY",
-      "price": 12.420974,
-      "amount": 1.3426629586106995,
-      "timestamp": "2025-12-29T17:11:51.860Z",
+      "price": 595.38855,
+      "amount": 0.03458096936775976,
+      "timestamp": "2025-12-29T20:45:03.930Z",
       "reason": "Bot Signal"
     },
     {
-      "id": 1767028281708,
+      "id": 1767041075871,
+      "symbol": "LTC-USD",
+      "action": "BUY",
+      "price": 77.88197,
+      "amount": 0.29373669483400333,
+      "timestamp": "2025-12-29T20:44:35.871Z",
+      "reason": "Bot Signal"
+    },
+    {
+      "id": 1767041014425,
+      "symbol": "DOGE-USD",
+      "action": "BUY",
+      "price": 0.12233833,
+      "amount": 207.7734613778854,
+      "timestamp": "2025-12-29T20:43:34.425Z",
+      "reason": "Bot Signal"
+    },
+    {
+      "id": 1767041014425,
+      "symbol": "XRP-USD",
+      "action": "BUY",
+      "price": 1.8463277,
+      "amount": 15.296826044531532,
+      "timestamp": "2025-12-29T20:43:34.425Z",
+      "reason": "Bot Signal"
+    },
+    {
+      "id": 1767040984650,
       "symbol": "ATOM-USD",
       "action": "BUY",
-      "price": 1.9996103,
-      "amount": 9.266906601010414,
-      "timestamp": "2025-12-29T17:11:21.708Z",
+      "price": 1.9636772,
+      "amount": 15.980762830571138,
+      "timestamp": "2025-12-29T20:43:04.650Z",
       "reason": "Bot Signal"
     },
     {
-      "id": 1767028281707,
-      "symbol": "DOT-USD",
-      "action": "BUY",
-      "price": 1.853195,
-      "amount": 11.110063004413947,
-      "timestamp": "2025-12-29T17:11:21.707Z",
-      "reason": "Bot Signal"
-    },
-    {
-      "id": 1767028251518,
-      "symbol": "TRX-USD",
-      "action": "BUY",
-      "price": 0.2823782,
-      "amount": 81.01472583563816,
-      "timestamp": "2025-12-29T17:10:51.518Z",
-      "reason": "Bot Signal"
-    },
-    {
-      "id": 1767028221588,
-      "symbol": "AVAX-USD",
-      "action": "BUY",
-      "price": 12.61332,
-      "amount": 2.015223452928333,
-      "timestamp": "2025-12-29T17:10:21.588Z",
-      "reason": "Bot Signal"
-    },
-    {
-      "id": 1767028161634,
-      "symbol": "NEAR-USD",
-      "action": "BUY",
-      "price": 1.5277085,
-      "amount": 18.48713524085256,
-      "timestamp": "2025-12-29T17:09:21.634Z",
-      "reason": "Bot Signal"
-    },
-    {
-      "id": 1767028161634,
-      "symbol": "SHIB-USD",
-      "action": "BUY",
-      "price": 0.000007308,
-      "amount": 4294069.459359607,
-      "timestamp": "2025-12-29T17:09:21.634Z",
-      "reason": "Bot Signal"
-    },
-    {
-      "id": 1767028161634,
+      "id": 1767040984650,
       "symbol": "MATIC-USD",
       "action": "BUY",
       "price": 0.21823609,
       "amount": 159.77120928990254,
-      "timestamp": "2025-12-29T17:09:21.634Z",
+      "timestamp": "2025-12-29T20:43:04.650Z",
       "reason": "Bot Signal"
     },
     {
-      "id": 1767028161634,
-      "symbol": "DOGE-USD",
+      "id": 1767040984649,
+      "symbol": "LINK-USD",
       "action": "BUY",
-      "price": 0.1236242,
-      "amount": 313.3856388959444,
-      "timestamp": "2025-12-29T17:09:21.634Z",
+      "price": 12.270241,
+      "amount": 3.15739918229805,
+      "timestamp": "2025-12-29T20:43:04.649Z",
       "reason": "Bot Signal"
     },
     {
-      "id": 1767028131560,
-      "symbol": "ETC-USD",
-      "action": "BUY",
-      "price": 11.990357,
-      "amount": 3.590111703930084,
-      "timestamp": "2025-12-29T17:08:51.560Z",
-      "reason": "Bot Signal"
-    },
-    {
-      "id": 1767028131560,
-      "symbol": "XLM-USD",
-      "action": "BUY",
-      "price": 0.21792461,
-      "amount": 219.4781488882784,
-      "timestamp": "2025-12-29T17:08:51.560Z",
-      "reason": "Bot Signal"
-    },
-    {
-      "id": 1767028131560,
-      "symbol": "BCH-USD",
-      "action": "BUY",
-      "price": 604.2183,
-      "amount": 0.08795513144835237,
-      "timestamp": "2025-12-29T17:08:51.560Z",
-      "reason": "Bot Signal"
-    },
-    {
-      "id": 1767028131560,
-      "symbol": "LTC-USD",
-      "action": "BUY",
-      "price": 78.05162,
-      "amount": 0.7565377887095746,
-      "timestamp": "2025-12-29T17:08:51.560Z",
-      "reason": "Bot Signal"
-    },
-    {
-      "id": 1767028131560,
-      "symbol": "BNB-USD",
-      "action": "BUY",
-      "price": 853.36566,
-      "amount": 0.07688380617518638,
-      "timestamp": "2025-12-29T17:08:51.560Z",
-      "reason": "Bot Signal"
-    },
-    {
-      "id": 1767028131559,
-      "symbol": "BTC-USD",
-      "action": "BUY",
-      "price": 87585.16,
-      "amount": 0.0008323327833162605,
-      "timestamp": "2025-12-29T17:08:51.559Z",
-      "reason": "Bot Signal"
-    },
-    {
-      "id": 1767028101674,
+      "id": 1767040984649,
       "symbol": "SOL-USD",
       "action": "BUY",
-      "price": 123.41602,
-      "amount": 0.6563167407278244,
-      "timestamp": "2025-12-29T17:08:21.674Z",
+      "price": 122.87312,
+      "amount": 0.35033472740010185,
+      "timestamp": "2025-12-29T20:43:04.649Z",
       "reason": "Bot Signal"
     },
     {
-      "id": 1767028101674,
-      "symbol": "XRP-USD",
+      "id": 1767040984649,
+      "symbol": "BNB-USD",
       "action": "BUY",
-      "price": 1.8618231,
-      "amount": 48.339716055730534,
-      "timestamp": "2025-12-29T17:08:21.674Z",
+      "price": 851.67535,
+      "amount": 0.05615953308969199,
+      "timestamp": "2025-12-29T20:43:04.649Z",
       "reason": "Bot Signal"
     },
     {
-      "id": 1767028101674,
+      "id": 1767040984649,
       "symbol": "ETH-USD",
       "action": "BUY",
-      "price": 2935.693,
-      "amount": 0.03406350732178058,
-      "timestamp": "2025-12-29T17:08:21.674Z",
+      "price": 2928.582,
+      "amount": 0.018146700348496306,
+      "timestamp": "2025-12-29T20:43:04.649Z",
+      "reason": "Bot Signal"
+    },
+    {
+      "id": 1767040984649,
+      "symbol": "BTC-USD",
+      "action": "BUY",
+      "price": 87182.82,
+      "amount": 0.0006773008718919622,
+      "timestamp": "2025-12-29T20:43:04.649Z",
+      "reason": "Bot Signal"
+    },
+    {
+      "id": 1767040953222,
+      "symbol": "ETC-USD",
+      "action": "BUY",
+      "price": 11.87254,
+      "amount": 5.526197427003825,
+      "timestamp": "2025-12-29T20:42:33.222Z",
+      "reason": "Bot Signal"
+    },
+    {
+      "id": 1767040953222,
+      "symbol": "NEAR-USD",
+      "action": "BUY",
+      "price": 1.5116762,
+      "amount": 48.22461318105029,
+      "timestamp": "2025-12-29T20:42:33.222Z",
+      "reason": "Bot Signal"
+    },
+    {
+      "id": 1767040953222,
+      "symbol": "XLM-USD",
+      "action": "BUY",
+      "price": 0.21585096,
+      "amount": 375.2589286607759,
+      "timestamp": "2025-12-29T20:42:33.222Z",
+      "reason": "Bot Signal"
+    },
+    {
+      "id": 1767040953222,
+      "symbol": "SHIB-USD",
+      "action": "BUY",
+      "price": 0.000007228,
+      "amount": 12451577.199778639,
+      "timestamp": "2025-12-29T20:42:33.222Z",
+      "reason": "Bot Signal"
+    },
+    {
+      "id": 1767040953222,
+      "symbol": "TRX-USD",
+      "action": "BUY",
+      "price": 0.2834489,
+      "amount": 352.7972766872618,
+      "timestamp": "2025-12-29T20:42:33.222Z",
       "reason": "Bot Signal"
     }
   ],
   "totalValue": 1000,
   "totalPnL": 0,
   "winRate": 0,
-  "lastAnalysis": "2025-12-29T19:54:24.115Z",
+  "lastAnalysis": "2025-12-29T20:52:04.586Z",
   "scanSummary": {
     "totalScanned": 0,
     "qualified": 0,
-    "verbalLog": "Analiz tamamlandı. 8 fırsat incelendi ancak alım kriterlerine uyan bulunamadı."
+    "verbalLog": "Analiz tamamlandı. 4 fırsat incelendi ancak alım kriterlerine uyan bulunamadı."
   }
 }
