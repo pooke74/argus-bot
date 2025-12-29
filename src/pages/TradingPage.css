@@ -1,0 +1,372 @@
+.trading-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 100%);
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    padding-bottom: 2rem;
+}
+
+.trading-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    flex-wrap: wrap;
+}
+
+.trading-header h1 {
+    flex: 1;
+    margin: 0;
+    font-size: 1.8rem;
+    background: linear-gradient(90deg, #f59e0b, #22c55e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.controls {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.auto-toggle,
+.scan-btn {
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+}
+
+.auto-toggle {
+    background: rgba(255, 255, 255, 0.1);
+    color: #888;
+}
+
+.auto-toggle.active {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: white;
+}
+
+.scan-btn {
+    background: linear-gradient(135deg, #7c3aed, #6366f1);
+    color: white;
+}
+
+.scan-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    padding: 1.5rem;
+}
+
+.portfolio-section h2 {
+    margin: 0 0 1rem;
+    font-size: 1.1rem;
+    color: #888;
+}
+
+.portfolio-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.stat-card .label {
+    display: block;
+    color: #888;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-card .value {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.stat-card .value.positive {
+    color: #22c55e;
+}
+
+.stat-card .value.negative {
+    color: #ef4444;
+}
+
+.stat-card .percent {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+    opacity: 0.8;
+}
+
+.positions h3 {
+    margin: 0 0 0.75rem;
+    font-size: 1rem;
+    color: #7c3aed;
+}
+
+.positions table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.positions th,
+.positions td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.positions th {
+    color: #888;
+    font-weight: 500;
+}
+
+.positions .symbol {
+    font-weight: 700;
+    color: #00d4ff;
+}
+
+.positions .positive {
+    color: #22c55e;
+}
+
+.positions .negative {
+    color: #ef4444;
+}
+
+/* Signals Section */
+.signals-section {
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.signals-section h2 {
+    margin: 0 0 1rem;
+    font-size: 1.1rem;
+    color: #888;
+}
+
+.signals-section h2 .time {
+    font-weight: 400;
+    font-size: 0.85rem;
+}
+
+.signals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.signal-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.signal-card.buy {
+    border-left: 3px solid #22c55e;
+}
+
+.signal-card.sell {
+    border-left: 3px solid #ef4444;
+}
+
+.signal-card.hold {
+    border-left: 3px solid #888;
+}
+
+.signal-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.signal-header .symbol {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.signal-header .action {
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.action.buy {
+    background: rgba(34, 197, 94, 0.2);
+    color: #22c55e;
+}
+
+.action.sell {
+    background: rgba(239, 68, 68, 0.2);
+    color: #ef4444;
+}
+
+.action.hold {
+    background: rgba(255, 255, 255, 0.1);
+    color: #888;
+}
+
+.signal-header .executed {
+    margin-left: auto;
+    color: #22c55e;
+    font-size: 0.8rem;
+}
+
+.signal-card .scores {
+    display: flex;
+    gap: 0.75rem;
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 0.75rem;
+}
+
+.signal-card .reason {
+    font-size: 0.85rem;
+    color: #aaa;
+    line-height: 1.4;
+}
+
+.signal-card .reason p {
+    margin: 0.25rem 0;
+}
+
+/* History Section */
+.history-section {
+    padding: 1.5rem;
+}
+
+.history-section h2 {
+    margin: 0 0 1rem;
+    font-size: 1.1rem;
+    color: #888;
+}
+
+.empty {
+    color: #666;
+    text-align: center;
+    padding: 2rem;
+}
+
+.trades-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.trade-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.trade-card.buy {
+    border-left: 3px solid #22c55e;
+}
+
+.trade-card.sell {
+    border-left: 3px solid #ef4444;
+}
+
+.trade-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.trade-header .symbol {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.trade-header .time {
+    margin-left: auto;
+    color: #666;
+    font-size: 0.8rem;
+}
+
+.trade-details {
+    display: flex;
+    justify-content: space-between;
+    color: #aaa;
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+}
+
+.trade-details .total {
+    font-weight: 600;
+    color: #fff;
+}
+
+.trade-reason {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+}
+
+.trade-reason .score {
+    color: #7c3aed;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.trade-reason p {
+    margin: 0;
+    color: #888;
+    white-space: pre-wrap;
+}
+
+/* Footer */
+.trading-footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    margin-top: 2rem;
+}
+
+.reset-btn {
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.disclaimer {
+    color: #666;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .portfolio-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .signals-grid {
+        grid-template-columns: 1fr;
+    }
+}

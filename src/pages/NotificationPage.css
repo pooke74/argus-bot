@@ -1,0 +1,136 @@
+.notification-page {
+    min-height: 100vh;
+    background: #0f0f1a;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.notif-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+
+.head-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.action-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: #ccc;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.action-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.notif-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.notif-item {
+    background: rgba(22, 22, 36, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    transition: all 0.2s;
+    border-left: 4px solid transparent;
+    cursor: pointer;
+}
+
+.notif-item:hover {
+    transform: translateX(4px);
+    background: rgba(30, 30, 50, 0.9);
+}
+
+.notif-item.unread {
+    background: rgba(30, 41, 59, 0.8);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.notif-item.INFO {
+    border-left-color: #3b82f6;
+}
+
+.notif-item.SUCCESS {
+    border-left-color: #22c55e;
+}
+
+.notif-item.WARNING {
+    border-left-color: #f59e0b;
+}
+
+.notif-item.ERROR {
+    border-left-color: #ef4444;
+}
+
+.notif-icon {
+    font-size: 1.5rem;
+    padding-top: 0.25rem;
+}
+
+.notif-content {
+    flex: 1;
+}
+
+.notif-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.25rem;
+}
+
+.notif-title {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #e2e8f0;
+}
+
+.notif-time {
+    font-size: 0.75rem;
+    color: #64748b;
+}
+
+.notif-message {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.unread-dot {
+    width: 8px;
+    height: 8px;
+    background: #3b82f6;
+    border-radius: 50%;
+    margin-top: 0.5rem;
+}
+
+.empty-state {
+    text-align: center;
+    margin-top: 4rem;
+    color: #64748b;
+}
+
+.empty-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    display: block;
+    opacity: 0.5;
+}

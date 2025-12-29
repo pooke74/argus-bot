@@ -1,0 +1,15 @@
+{
+  "name": "argus-proxy",
+  "version": "1.0.0",
+  "description": "Proxy server for Argus Trading System",
+  "main": "server.js",
+  "scripts": {
+    "server": "node server.js",
+    "dev": "concurrently \"npm run server\" \"vite\"",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}

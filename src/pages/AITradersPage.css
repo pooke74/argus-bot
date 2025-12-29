@@ -1,0 +1,422 @@
+.ai-traders-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #16213e 100%);
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    padding: 1rem;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+    background: linear-gradient(90deg, #f59e0b, #ef4444, #7c3aed);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.page-header p {
+    color: #888;
+}
+
+.back-btn {
+    color: #7c3aed;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+/* Live Status Indicator */
+.live-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: #22c55e;
+}
+
+.live-dot {
+    width: 8px;
+    height: 8px;
+    background: #22c55e;
+    border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4);
+    }
+
+    50% {
+        opacity: 0.7;
+        box-shadow: 0 0 0 8px rgba(34, 197, 94, 0);
+    }
+}
+
+/* Controls */
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.controls button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.analyze-btn {
+    background: linear-gradient(135deg, #7c3aed, #6366f1);
+    color: white;
+}
+
+.analyze-btn:hover:not(:disabled) {
+    transform: scale(1.05);
+}
+
+.analyze-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.auto-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: #888;
+}
+
+.auto-btn.active {
+    background: rgba(34, 197, 94, 0.2);
+    color: #22c55e;
+}
+
+.reset-btn {
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+}
+
+/* Traders Grid */
+.traders-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 1200px) {
+    .traders-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .traders-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.trader-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.trader-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.trader-card.aggressive {
+    border-left: 4px solid #ef4444;
+}
+
+.trader-card.balanced {
+    border-left: 4px solid #f59e0b;
+}
+
+.trader-card.conservative {
+    border-left: 4px solid #22c55e;
+}
+
+.trader-card.high-frequency {
+    border-left: 4px solid #00d4ff;
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.1);
+}
+
+.trader-card.value {
+    border-left: 4px solid #ffd700;
+}
+
+.trader-header {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.trader-emoji {
+    font-size: 3rem;
+}
+
+.trader-info h2 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.trader-desc {
+    margin: 0.25rem 0 0;
+    font-size: 0.85rem;
+    color: #888;
+    line-height: 1.4;
+}
+
+/* Stats Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.stat {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.75rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.stat-label {
+    display: block;
+    font-size: 0.75rem;
+    color: #666;
+    margin-bottom: 0.25rem;
+}
+
+.stat-value {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.stat-value.positive {
+    color: #22c55e;
+}
+
+.stat-value.negative {
+    color: #ef4444;
+}
+
+/* Thought Bubble */
+.thought-bubble {
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(99, 102, 241, 0.1));
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.thought-icon {
+    font-size: 1.5rem;
+}
+
+.thought-bubble p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #ccc;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+/* Positions */
+.positions-section,
+.trades-section {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: none;
+}
+
+.trader-card.expanded .positions-section,
+.trader-card.expanded .trades-section {
+    display: block;
+}
+
+.positions-section h4,
+.trades-section h4 {
+    margin: 0 0 0.75rem;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.position-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.85rem;
+}
+
+.pos-symbol {
+    font-weight: 600;
+    color: #00d4ff;
+}
+
+.pos-pnl.positive {
+    color: #22c55e;
+}
+
+.pos-pnl.negative {
+    color: #ef4444;
+}
+
+/* Trades */
+.trade-item {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.trade-item.buy {
+    border-left: 3px solid #22c55e;
+}
+
+.trade-item.sell {
+    border-left: 3px solid #ef4444;
+}
+
+.trade-header {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 0.25rem;
+}
+
+.trade-action {
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.trade-action.buy {
+    color: #22c55e;
+}
+
+.trade-action.sell {
+    color: #ef4444;
+}
+
+.trade-symbol {
+    font-weight: 600;
+    color: #00d4ff;
+}
+
+.trade-time {
+    margin-left: auto;
+    font-size: 0.75rem;
+    color: #666;
+}
+
+.trade-details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-bottom: 0.25rem;
+}
+
+.trade-details .positive {
+    color: #22c55e;
+}
+
+.trade-details .negative {
+    color: #ef4444;
+}
+
+.trade-reason {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #888;
+    line-height: 1.3;
+}
+
+.expand-hint {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #555;
+    margin-top: 0.5rem;
+}
+
+/* Leaderboard */
+.leaderboard {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 16px;
+    padding: 1.5rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.leaderboard h3 {
+    margin: 0 0 1rem;
+    text-align: center;
+}
+
+.leaderboard-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.leaderboard-item.leader {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(247, 181, 0, 0.1));
+    border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.leaderboard-item .rank {
+    font-weight: 700;
+    width: 30px;
+}
+
+.leaderboard-item .emoji {
+    font-size: 1.5rem;
+}
+
+.leaderboard-item .name {
+    flex: 1;
+    font-weight: 500;
+}
+
+.leaderboard-item .pnl {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.leaderboard-item .pnl.positive {
+    color: #22c55e;
+}
+
+.leaderboard-item .pnl.negative {
+    color: #ef4444;
+}

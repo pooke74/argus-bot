@@ -1,0 +1,612 @@
+.crypto-ai-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0a0a12 0%, #1a1a2e 50%, #0f1419 100%);
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    padding: 1rem;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+    background: linear-gradient(90deg, #f7931a, #627eea, #00d4ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.page-header p {
+    color: #888;
+}
+
+.back-btn {
+    color: #f7931a;
+    text-decoration: none;
+}
+
+.live-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.live-status.active {
+    color: #22c55e;
+}
+
+.live-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #888;
+}
+
+.live-status.active .live-dot {
+    background: #22c55e;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 0 0 10px rgba(34, 197, 94, 0);
+    }
+}
+
+/* Stats Bar */
+.stats-bar {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 900px) {
+    .stats-bar {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .stats-bar {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.stat-item {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.stat-label {
+    display: block;
+    font-size: 0.75rem;
+    color: #666;
+    margin-bottom: 0.25rem;
+}
+
+.stat-value {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+}
+
+.stat-value.positive {
+    color: #22c55e;
+}
+
+.stat-value.negative {
+    color: #ef4444;
+}
+
+.positive {
+    color: #22c55e;
+}
+
+.negative {
+    color: #ef4444;
+}
+
+/* Controls */
+.controls {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.control-btn {
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.control-btn.start {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: white;
+}
+
+.control-btn.stop {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    color: white;
+}
+
+.control-btn.reset {
+    background: rgba(255, 255, 255, 0.1);
+    color: #888;
+}
+
+.control-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Thought Bubble */
+.thought-bubble {
+    background: linear-gradient(135deg, rgba(247, 147, 26, 0.1), rgba(98, 126, 234, 0.1));
+    border: 1px solid rgba(247, 147, 26, 0.2);
+    border-radius: 16px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.thought-icon {
+    font-size: 2rem;
+}
+
+.thought-bubble p {
+    flex: 1;
+    color: #ccc;
+    margin: 0;
+}
+
+.thought-time {
+    font-size: 0.75rem;
+    color: #666;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.tab {
+    padding: 0.75rem 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: #888;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.tab.active {
+    background: linear-gradient(135deg, rgba(247, 147, 26, 0.2), rgba(98, 126, 234, 0.2));
+    border-color: #f7931a;
+    color: white;
+}
+
+/* Tab Content */
+.tab-content {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 16px;
+    padding: 1rem;
+    min-height: 400px;
+}
+
+/* Dashboard Tab */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+@media (max-width: 900px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.dashboard-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.dashboard-card h3 {
+    margin: 0 0 1rem;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.portfolio-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.portfolio-item.cash {
+    color: #f7931a;
+}
+
+.coin-name {
+    flex: 1;
+    font-weight: 600;
+}
+
+.coin-value {
+    color: #888;
+    margin-right: 1rem;
+}
+
+.coin-pnl {
+    font-weight: 600;
+}
+
+.activity-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.activity-symbol {
+    font-weight: 600;
+    color: #00d4ff;
+}
+
+.activity-reason {
+    color: #888;
+    font-size: 0.85rem;
+    flex: 1;
+}
+
+.strategy-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    color: #888;
+}
+
+.strategy-item span:last-child {
+    font-weight: 600;
+    color: white;
+}
+
+/* Empty State */
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    color: #666;
+}
+
+.empty-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.empty-hint {
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+
+/* Positions Table */
+.positions-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.positions-table th,
+.positions-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.positions-table th {
+    color: #666;
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+
+.coin-cell {
+    display: flex;
+    flex-direction: column;
+}
+
+.coin-symbol {
+    font-weight: 700;
+    color: #00d4ff;
+}
+
+.coin-name {
+    font-size: 0.75rem;
+    color: #888;
+}
+
+/* Trades Card */
+.trade-card {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid #888;
+}
+
+.trade-card.buy {
+    border-left-color: #22c55e;
+}
+
+.trade-card.sell {
+    border-left-color: #ef4444;
+}
+
+.trade-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.trade-action {
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.trade-action.buy {
+    color: #22c55e;
+}
+
+.trade-action.sell {
+    color: #ef4444;
+}
+
+.trade-symbol {
+    font-weight: 700;
+    color: #00d4ff;
+}
+
+.trade-time {
+    margin-left: auto;
+    font-size: 0.75rem;
+    color: #666;
+}
+
+.trade-details {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.trade-detail {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.85rem;
+}
+
+.trade-detail span:first-child {
+    color: #666;
+    font-size: 0.75rem;
+}
+
+.trade-reason {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 0.5rem;
+}
+
+.reason-label {
+    color: #666;
+    margin-right: 0.5rem;
+}
+
+.trade-signals {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.75rem;
+    color: #666;
+}
+
+/* Scan Summary */
+.market-section.full-width {
+    width: 100%;
+}
+
+.scan-summary {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+.scan-stat.total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 2rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.scan-stat .scan-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #00d4ff;
+    line-height: 1;
+}
+
+.scan-stat .scan-label {
+    font-size: 0.85rem;
+    color: #888;
+    margin-top: 0.5rem;
+}
+
+.scan-reasons {
+    display: flex;
+    gap: 1.5rem;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.reason-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 80px;
+}
+
+.reason-count {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #ef4444;
+    /* Default rejected color */
+}
+
+.reason-item.warning .reason-count {
+    color: #f7931a;
+}
+
+.reason-item.success .reason-count {
+    color: #22c55e;
+}
+
+.reason-text {
+    font-size: 0.75rem;
+    color: #666;
+    margin-top: 0.25rem;
+}
+
+.scan-time {
+    font-size: 0.75rem;
+    color: #444;
+    width: 100%;
+    margin-top: 0.5rem;
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .scan-summary {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .scan-stat.total {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding-right: 0;
+        padding-bottom: 1rem;
+    }
+}
+
+.market-section {
+    margin-bottom: 1.5rem;
+}
+
+.market-section h3 {
+    margin: 0 0 0.75rem;
+    color: #ccc;
+}
+
+.coin-list {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.coin-chip {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.coin-chip.gainer {
+    background: rgba(34, 197, 94, 0.2);
+    color: #22c55e;
+}
+
+.coin-chip.loser {
+    background: rgba(239, 68, 68, 0.2);
+    color: #ef4444;
+}
+
+.coin-chip.hot {
+    background: rgba(247, 147, 26, 0.2);
+    color: #f7931a;
+}
+
+.no-data {
+    color: #666;
+    font-style: italic;
+}
+
+.crypto-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.crypto-tag {
+    padding: 0.25rem 0.75rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    font-size: 0.75rem;
+    color: #888;
+}
+
+.crypto-tag.more {
+    background: rgba(98, 126, 234, 0.2);
+    color: #627eea;
+}
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #888;
+}
